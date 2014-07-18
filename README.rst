@@ -43,18 +43,6 @@ Creating, Modifing, Listing, Deleting Projects
 
 or
 
-::
-
-   with  SyncanoApi(instance_name, apikey) as syncano:
-
-    project = syncano.project.new('test', message_id=1)
-    project_id = project['data']['project']['id']
-    syncano.project.update(project_id, 'test_2', message_id=2)
-    print(syncano.project.get(message_id=3))
-    syncano.project.delete(project_id)
-
-
-
 Subscribe and listen to notifications, and pings
 ------------------------------------------------
 
